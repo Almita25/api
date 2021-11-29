@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animacion</title>
+    <script src="../views/halloween.js"></script>
+    <link rel="stylesheet" href="../index.html">
+</head>
+<body>
+    
+    <h1>animacion-scrollreveal</h1>
+    <div class="container">
+    <div class="box1">
+        <img src="../imagenes/cupcakes_halloween.jpeg" alt="">
+     </div>
+     <div class="box1">
+        <img src="../imagenes/manoesqueleto2.jpeg" alt="">
+    </div>
+    <div class="box1">
+        <img src="../imagenes/cupcakes_conos_brujitas.jpeg" alt="">
+    </div>
+
+<script>
+window.sr = scrollReveal
+sr.reveal(".box1", {
+    origin = "left",
+    interval = 100,
+    duracion = 2000,
+    distance: "150%"
+
+})
+
+</script>
+
+
+
+    </div>
+</body>
+<script src="../views/halloween.js"></script>
+</html>

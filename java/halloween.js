@@ -15,4 +15,4 @@ ScrollReveal().reveal('.dulzura' , {delay : 600});
 ScrollReveal().reveal('.imagen_cupcakes_vainilla' , {delay : 800});
 ScrollReveal().reveal('.dark-mode' , {delay : 700});
 ScrollReveal().reveal('.lightmode' , {delay : 800});
-ScrollReveal().reveal('.cupcake-azul' , {delay : 800});
+ScrollReveal().reveal('.cupcake_azul' , {delay : 800});
