@@ -1,29 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap');
+
 
 body{
     background-color:pink;
-    color:brown;    
+    color: #341815;    
     font-family: 'Source Serif Pro', serif;
-
+    text-align: center;
+    font-size: 25px;
 }
-h1 {
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 900;
+.header {
+    height: fit-content;
+    padding: 30px;
 }
-p,a{
 
-    font-size: 28px;
+.text {
     font-family: 'Source Serif Pro', serif;
     font-weight: 400;
 }
-
+.container {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.column {
+    display: table-column;
+}
+.button {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: white;
+    color: #331A16;
+    border: solid;
+    border-color: #FFCED0;
+    border-radius: 10px;
+    padding: 10px;
+    transform: 20px;
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: #331A16;
+    color: #FFCED0;
+    transition: 0.5s;
+    border-radius: 8px;
+    transform: 15px;
+    text-decoration: none;
+}
 .filtro{
     filter: grayscale(100%);
 }
 #titulo{
-
+    color: #341815;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 900;
     text-align: center;
     font-size: 55px; 
-    color: brown;
     padding: 1%;
     border: 1px;
 }
@@ -134,12 +167,7 @@ p,a{
     width: 300px;
     height: 300px;
 }
-body {
 
-    text-align: center;
-    font-size: 16px;
-    color:brown;
-}
 .box .selected{
 
     align-self: center;
@@ -155,46 +183,48 @@ body {
 
         width:50vw;
     }
-    @media screen and (max-width: 1020px) {
-        .menu-navegacion{
-    
-            width:50vw;
-        }}
-        @media (max-width: 400px){
+@media screen and (max-width: 1020px) {
+    .menu-navegacion{
+        width:50vw;
+    }
+}
+@media (max-width: 400px){
+    body {
+        background: beige;
+    }
 
-            body {background: beige;
-        }}
-        img{
-            transition: all 0.5s;
-        }
-        imagenes halloween{
+    img{
+        transition: all 0.5s;
+    }
+    .imagenes-halloween{
             opacity: 0.4;
-transition: 0.8s;
-
-        }
+            transition: 0.8s;
+    }
        
        
-      .to-top{
+    .to-top{
           width: 50px;
           height: 50px;
           position: fixed;
           bottom: 16px;
-          right: 32px;
-          
-          
-          
-      }
-      .to-top.active{
-
+          right: 32px;   
+    }
+    .to-top.active{
         bottom: 32px;
         pointer-events: auto;
         opacity: 1;
+    }
+    html{
+          scroll-behavior: smooth;
+    }
+}
 
-      }
-      html{
-          scroll-behavior: 
-        smooth;}
-
-        @media (orientation: landscape) and(max-width: 1200px) {
-
+    /*
+@media (orientation: landscape) and(max-width: 1200px) {
+    
         }
+    */
+    .imagen{
+
+        width:500px;
+    }
